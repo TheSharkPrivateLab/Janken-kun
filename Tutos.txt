@@ -1,0 +1,6 @@
+https://discordapp.com/developers/applications/me/251311348472872960
+https://github.com/hammerandchisel/discord-oauth2-example
+https://blog.discordapp.com/the-robot-revolution-has-unofficially-begun/
+https://discordapp.com/developers/docs/topics/oauth2#bots
+https://discordapp.com/channels/177161022619123713/177161022619123713
+https://www.mcdev.fr/threads/cr%C3%A9er-votre-premier-bot-discord-en-java.1315/
