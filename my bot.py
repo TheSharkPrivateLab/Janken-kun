@@ -23,7 +23,7 @@ async def aide():
 async def roll():
     """Rolls a dice in NdN format."""
     try:
-        await bot.say(':game_die: {} :game_die:'.format(round(random() * 100)))
+        await bot.say(':game_die: {} :game_die:'.format(randint(0, 100)))
     except Exception:
         await bot.say('Error !')
         return
@@ -38,7 +38,7 @@ async def janken():
 	else:
 		await client.send_message(message.channel, ':raised_hand:')
 		
-			#await client.send_message(message.channel, ':game_die: {} :game_die:'.format(round(random() * 100)))
+			#await client.send_message(message.channel, ':game_die: {} :game_die:'.format(randint(0, 100)))
 
 
 
