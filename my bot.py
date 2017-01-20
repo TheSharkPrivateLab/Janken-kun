@@ -30,7 +30,7 @@ async def roll():
 
 @bot.command()
 async def janken():
-	tmp = round(random() * 10)
+	tmp = randint(0, 10)
 	if tmp >= 0 and tmp <= 2:
 		await client.send_message(message.channel, ':scissors:')
 	elif tmp >= 3 and tmp <= 5:
