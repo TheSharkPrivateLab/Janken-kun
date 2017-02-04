@@ -39,16 +39,29 @@ async def roll():
 
 @bot.command(pass_context=True)
 async def janken():
-	tmp = randint(0, 10)
-	if tmp >= 0 and tmp <= 2:
-		await client.send_message(message.channel, ':scissors:')
-	elif tmp >= 3 and tmp <= 5:
-		await client.send_message(message.channel, ':punch:')
+	tmp = randint(1, 100)
+	if tmp >= 0 and tmp <= 33:
+		await bot.say(':scissors:')
+	elif tmp >= 34 and tmp <= 66:
+		await bot.say(':punch:')
 	else:
-		await client.send_message(message.channel, ':raised_hand:')
-		
-			#await client.send_message(message.channel, ':game_die: {} :game_die:'.format(randint(0, 100)))
+		await bot.say(':raised_hand:')
 
+@bot.group(pass_context=True)
+async def lol(ctx):
+    if ctx.invoked_subcommand is None:
+        await bot.say("Veuillez rentrer sous la forme de <region> <pseudo> | "
+        	"Region: br, eune, euw, global, kr, lan, las, na , oce, pbe, ru, tr")
+
+@lol.command()
+async def euw(*, player: str):
+	if player is None:
+		await bot.say("Veuillez rentrer sous la forme de <region> <pseudo> | "
+        	"Region: br, eune, euw, global, kr, lan, las, na , oce, pbe, ru, tr")
+		return
+	msg = await bot.say("test...")
+	asyncio.sleep(2)
+	await bot.edit_message(msg, "YOLO !")
 
 
 bot.run('MjUxMzExMzQ4NDcyODcyOTYw.CxjrEA.0WJPDeKkVIrNJFImveaRfbU2U4w')

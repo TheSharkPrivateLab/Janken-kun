@@ -4,3 +4,6 @@ https://blog.discordapp.com/the-robot-revolution-has-unofficially-begun/
 https://discordapp.com/developers/docs/topics/oauth2#bots
 https://discordapp.com/channels/177161022619123713/177161022619123713
 https://www.mcdev.fr/threads/cr%C3%A9er-votre-premier-bot-discord-en-java.1315/
+
+UNOFICIAL DISCORD API CHAT : (for all language)
+https://discord.gg/WfA6jC8
